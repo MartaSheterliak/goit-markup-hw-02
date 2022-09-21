@@ -1,7 +1,10 @@
-.root {
+:root {
     --top-title-color: #212121;
     --top-text-color: #757575;
-    
+    --top-adress-color: #2196F3;
+    --top-ht: 1.14;
+    --top-footer-text: rgba(255, 255, 255, 0.6);
+    --footer-text-color: #FFFFFF;
 }
 
 body {
@@ -30,43 +33,54 @@ font-family: "Roboto", sans-serif;
     overflow: hidden;
   }
 
+
+
 /*----------------HEADER---------------*/
 
-.header-logo {
+.header-logo,
+.footer-logo {
+    font-family: 'Raleway', sans-serif ;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--top-adress-color)
 }
 
-.header-link link {
+.header-color-text {
+    color: #000000;
+}
+
+
+.header-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: var(--top-ht)
     letter-spacing: 0.02em;
-    color: var(--top-color)
+    color: var(--top-title-color)
 }
 
-.header-mail link {
+.header-mail {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: var(--top-ht)
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: var(--top-adress-color)
 }
 
-.header-tel link {
+.header-tel {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: var(--top-ht)
     letter-spacing: 0.02em;
     color: var(--top-text-color)
+
 }
+
 
 .header-link:hover, 
 .header-link:focus {
-    color:#2196F3;
+    color:var(--top-adress-color)
 }
 
 /*----------------HERO-----------------*/
@@ -86,23 +100,30 @@ font-family: "Roboto", sans-serif;
 }
 
 .hero-btn {
-    font-family: inherit;
+    font-family: 'Raleway';
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #000000;
     cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    color: #FFFFFF; 
+    background-color: var(--top-adress-color)
 }
 
 .benefits-title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: var(--top-ht)
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--top-color)
+    color: var(--top-title-color)
 }
 
 .benefits-text {
@@ -118,7 +139,7 @@ font-family: "Roboto", sans-serif;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--top-color)
+    color: var(--top-title-color)
 }
 
 .team-top-title {
@@ -127,7 +148,7 @@ font-family: "Roboto", sans-serif;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--top-color)
+    color: var(--top-title-color)
 }
 
 .team-title {
@@ -136,7 +157,7 @@ font-family: "Roboto", sans-serif;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--top-color)
+    color: var(--top-title-color)
 }
 
 .team-text {
@@ -153,28 +174,28 @@ font-family: "Roboto", sans-serif;
 .footer {
     background-color: #2F303A;}
 
-.footer-address {
+.footer-item {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+}
+
+.footer-address {
+    color: var(--footer-text-color)
 }
 
 .footer-mail {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--top-footer-text)
 }
 
 .footer-tel {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--top-footer-text)
+}
+
+.footer-color-text {
+    color: var(--footer-text-color)
 }
 
 /*--------------Portfolio-------------*/
@@ -187,7 +208,7 @@ font-family: "Roboto", sans-serif;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--top-title-color)
 }
 
 .progects-title {
@@ -195,7 +216,7 @@ font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--top-title-color)
 }
 
 .progects-text {
@@ -203,5 +224,20 @@ font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--top-text-color)
+}
+
+.progects-hero-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--top-title-color)
+}
+
+.progects-hero-btn:hover,
+.progects-hero-btn:focus {
+    color: #FFFFFF; 
+    background-color: var(--top-adress-color)
 }
