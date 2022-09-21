@@ -60,6 +60,10 @@ font-family: "Roboto", sans-serif;
     color: var(--top-title-color)
 }
 
+.header-item .header-link.current {
+    color: var(--top-adress-color);
+}
+
 .header-mail {
     font-weight: 500;
     font-size: 14px;
